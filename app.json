@@ -1,0 +1,123 @@
+{
+    "name": "Sophia ᴍᴜsɪᴄ",
+    "description": "A Telegram Music Player Bot, written in Python with Pyrogram and Py-Tgcalls.",
+    "logo": "https://telegra.ph/file/26aa5ce660ccb0ebdb38c.jpg",
+    "keywords": [
+    "python3",
+    "telegram",
+    "bot",
+    "AM",
+    "MusicBot",
+    "telegram-bot",
+    "pyrogram"
+    ],
+    "env": {
+      "API_ID": {
+        "description": "Get this value from https://my.telegram.org",
+        "value": "12227067",
+        "required": true
+      },
+      "API_HASH": {
+        "description": "Get this value from https://my.telegram.org",
+        "value": "b463bedd791aa733ae2297e6520302fe",
+        "required": true
+      },
+        "AUTO_LEAVING_ASSISTANT": {
+        "description": "If you want your assistant to leave all chats automatically after some time.",
+        "value": "True",
+        "required": true
+      },
+      "BOT_TOKEN": {
+        "description": "A Bot's token from Botfather",
+        "value": "",
+        "required": true
+      },
+      "MONGO_DB_URI": {
+        "description": "Get a mongodb url from https://cloud.mongodb.com.",
+        "value": "",
+        "required": true
+      },
+      "MUSIC_BOT_NAME": {
+        "description": "A name for your Music Bot. You can use special characters bot ko jhaat farak ni padega",
+        "value": "Music Test",
+        "required": true
+      },
+      "OWNER_ID": {
+        "description": "The user id(s) of user(s) whom you would like to add as a OWNER. Multiple values shall be seperated with a space.",
+        "value": "6204761408",
+        "required": true
+      },
+      "STRING_SESSION": {
+        "description": "A Pyrogram String Session. One Assistant is Compulsory.",
+        "value": "",
+        "required": true
+      },
+      "HEROKU_API_KEY": {
+        "description": "Your Heroku account's API key",
+        "value": "8924e273-fe93-4bb0-8bbb-30b50a9ca076",
+        "required": false
+      },
+      "HEROKU_APP_NAME": {
+        "description": "Your heroku app/bot's name",
+        "value": "",
+        "required": false
+      },
+      "SUPPORT_GROUP": {
+        "description": "Your Support Group link ",
+        "value": "https://t.me/AM_YTSupport",
+        "required": false
+      },
+      "SUPPORT_CHANNEL": {
+        "description": "Your Updates Channel link",
+        "value": "https://t.me/AbhiModszYT_Return",
+        "required": false
+      },
+      "PING_IMG_URL": {
+        "description": "The pic which will be shown when you give the /ping cmd to the bot.",
+        "value": "https://telegra.ph/file/f20237d3a028a343d595a.jpg",
+        "required": false
+      },
+      "START_IMG_URL": {
+        "description": "The pic which will be shown when you /start the bot in private.",
+        "value": "https://telegra.ph/file/f20237d3a028a343d595a.jpg",
+        "required": false
+      },
+      "SPOTIFY_CLIENT_ID": {
+        "description": "Spotify Client Id Get From developer.spotify.com.",
+        "value": "2a230af10e0a40638dc77c1febb47170",
+        "required": false
+      },
+     "SPOTIFY_CLIENT_SECRET": {
+        "description": "Spotify Client Secret Get From developer.spotify.com.",
+        "value": "7f92897a59464ddbbf00f06cd6bda7fc",
+        "required": false
+      },
+       "UPSTREAM_BRANCH": {
+        "description": "Branch ",
+        "value": "main",
+        "required": false
+      },
+       "UPSTREAM_REPO": {
+        "description": "Your Fork Repo link ",
+        "value": "https://github.com/AbhiModszYT/AMMusic",
+        "required": false
+      },
+      "LOG_GROUP_ID": {
+        "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Channel ki id mat daal dena bsdk.",
+        "value": "-1001817662435",
+        "required": true
+      }
+    },
+    "buildpacks": [
+          {
+              "url": "heroku/python"
+          },
+          {
+              "url": "heroku/nodejs"
+          },
+          {
+              "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+          }
+      ],
+      "stack": "container"
+  }
