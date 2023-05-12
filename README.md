@@ -162,6 +162,8 @@ Press `Ctrl+C` when you're done with editing env and `:wq` to save the env<br>
 <summary><b>ᴄʀᴇᴅɪᴛ</b></summary>
 <br>
 
+<h3 align="center">
+   ᴄʀᴇᴅɪᴛs 
 ## sᴘᴇᴄɪᴀʟ ᴄʀᴇᴅɪᴛ
 
 - [AbhiModszYT](https://telegram.dog/AM_YTBOTT)
@@ -169,9 +171,6 @@ Press `Ctrl+C` when you're done with editing env and `:wq` to save the env<br>
 - [ᴀɴᴏɴʏᴍᴏᴜs](https://github.com/TheAnonymous2005)
 </details>
 
-
-<h3 align="center">
-    ─「 ᴄʀᴇᴅɪᴛs 」─
 </h3>
 
 <p align="center">
