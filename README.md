@@ -98,6 +98,7 @@
 - [ᴛᴇʟᴇɢʀᴀᴍ ᴀᴘɪ ᴋᴇʏ](https://docs.pyrogram.org/intro/setup#api-keys)
 - [ᴛᴇʟᴇɢʀᴀᴍ ʙᴏᴛ ᴛᴏᴋᴇɴ](https://telegram.dog/botfather)
 - [ᴍᴏɴɢᴏᴅʙ URI](https://te.legra.ph/How-To-get-Mongodb-URI-04-06)
+- [spotify ID](https://developer.spotify.com)
 - [sᴛʀɪɴɢ sᴇssɪᴏɴ](https://t.me/ssgenrobot)
     
 <h4> ɢᴇɴᴇʀᴀᴛᴇ sᴇssɪᴏɴ ᴠɪᴀ ᴛᴇʟᴇɢʀᴀᴍ sᴛʀɪɴɢ-ɢᴇɴ ʙᴏᴛ: </h4>    
