@@ -167,6 +167,7 @@ Press `Ctrl+C` when you're done with editing env and `:wq` to save the env<br>
 ## sᴘᴇᴄɪᴀʟ ᴄʀᴇᴅɪᴛ
 
 - [AbhiModszYT](https://telegram.dog/AM_YTBOTT)
+- [sᴛᴀʀ ʙᴏɪ](https://telegram.dog/its_star_boi)
 - [ʏᴜᴋᴋɪ](https://github.com/NotReallyShikhar)
 - [ᴀɴᴏɴʏᴍᴏᴜs](https://github.com/TheAnonymous2005)
 </details>
