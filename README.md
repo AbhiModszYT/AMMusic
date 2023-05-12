@@ -157,6 +157,19 @@ Press `Ctrl+C` when you're done with editing env and `:wq` to save the env<br>
 <a href="https://telegram.me/AbhiModszYT_Return"><img src="https://img.shields.io/badge/-Support%20Channel-blue.svg?style=for-the-badge&logo=Telegram"></a>
 </p>
 
+# Owner And Credit)
+<details>
+<summary><b>ᴄʀᴇᴅɪᴛ</b></summary>
+<br>
+
+## sᴘᴇᴄɪᴀʟ ᴄʀᴇᴅɪᴛ
+
+- [AbhiModszYT](https://telegram.dog/AM_YTBOTT)
+- [ʏᴜᴋᴋɪ](https://github.com/NotReallyShikhar)
+- [ᴀɴᴏɴʏᴍᴏᴜs](https://github.com/TheAnonymous2005)
+</details>
+
+
 <h3 align="center">
     ─「 ᴄʀᴇᴅɪᴛs 」─
 </h3>
