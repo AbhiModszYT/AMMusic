@@ -26,12 +26,12 @@ async def admins(cli, message: Message, _, chat_id):
     state = message.text.split(None, 1)[1].strip()
     if state.isnumeric():
         state = int(state)
-        if 1 <= state <= 10:
+        if 1 <= state <= 100:
             got = await get_loop(chat_id)
             if got != 0:
                 state = got + state
-            if int(state) > 10:
-                state = 10
+            if int(state) > 100:
+                state = 100
             await set_loop(chat_id, state)
             return await message.reply_text(
                 _["admin_25"].format(
@@ -41,7 +41,7 @@ async def admins(cli, message: Message, _, chat_id):
         else:
             return await message.reply_text(_["admin_26"])
     elif state.lower() == "enable":
-        await set_loop(chat_id, 10)
+        await set_loop(chat_id, 100)
         return await message.reply_text(
             _["admin_25"].format(message.from_user.first_name, state)
         )
