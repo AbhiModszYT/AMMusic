@@ -69,7 +69,7 @@
       },
       "SUPPORT_CHANNEL": {
         "description": "Your Updates Channel link",
-        "value": "https://t.me/AbhiModszYT_Return",
+        "value": "https://t.me/AmBotYT",
         "required": false
       },
       "PING_IMG_URL": {
