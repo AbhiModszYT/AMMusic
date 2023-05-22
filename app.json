@@ -28,7 +28,7 @@
         "required": true
       },
       "BOT_TOKEN": {
-        "description": "A Bot's token from Botfather",
+        "description": "A Bot's token from @BotFather",
         "value": "",
         "required": true
       },
@@ -38,22 +38,22 @@
         "required": true
       },
       "MUSIC_BOT_NAME": {
-        "description": "A name for your Music Bot. You can use special characters bot ko jhaat farak ni padega",
+        "description": "A name for your Music Bot. You can use special characters bot ko jhaat farak ni padega get from @BotFather",
         "value": "Music Test",
         "required": true
       },
       "OWNER_ID": {
-        "description": "The user id(s) of user(s) whom you would like to add as a OWNER. Multiple values shall be seperated with a space.",
+        "description": "The user id(s) of user(s) whom you would like to add as a OWNER. Multiple values shall be seperated with a space.get from @MissRose_bot user /id",
         "value": "6204761408",
         "required": true
       },
       "STRING_SESSION": {
-        "description": "A Pyrogram String Session. One Assistant is Compulsory.",
+        "description": "A Pyrogram String Session. One Assistant is Compulsory.get from @ssgenrobot",
         "value": "",
         "required": true
       },
       "HEROKU_API_KEY": {
-        "description": "Your Heroku account's API key",
+        "description": "Your Heroku account's API key get from https://dashboard.heroku.com/account",
         "value": "8924e273-fe93-4bb0-8bbb-30b50a9ca076",
         "required": false
       },
