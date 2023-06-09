@@ -47,13 +47,8 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
                 text="❣ 𝘾𝙝𝙖𝙩𝙩𝙞𝙣𝙜 𝙂𝙧𝙤𝙪𝙥 ❣", url=config.SUPPORT_GROUP
             ),
               InlineKeyboardButton(
-                text="❣ 𝘾𝙝𝙖𝙣𝙣𝙚𝙡 ❣", user_id=config.SUPPORT_CHANNEL
+                text="❣ 𝘾𝙝𝙖𝙣𝙣𝙚𝙡 ❣", url=config.SUPPORT_CHANNEL
             ), 
-        ],
-        [
-            InlineKeyboardButton(
-                text="✨ sᴏᴜʀᴄᴇ ✨", url=config.UPSTREAM_REPO
-            )
         ],
      ]
     return buttons
