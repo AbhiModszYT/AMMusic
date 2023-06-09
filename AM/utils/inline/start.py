@@ -40,7 +40,7 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
             )
             InlineKeyboardButton(
                 text="🥀 ᴍᴀɪɴᴛᴀɪɴᴇʀ 🥀", user_id=OWNER
-            )
+            ),
         ],
         [
             InlineKeyboardButton(
@@ -48,7 +48,7 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
             ),
               InlineKeyboardButton(
                 text="❣ 𝘾𝙝𝙖𝙣𝙣𝙚𝙡 ❣", user_id=config.SUPPORT_CHANNEL
-            )   
+            ), 
         ],
         [
             InlineKeyboardButton(
