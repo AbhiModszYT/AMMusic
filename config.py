@@ -7,16 +7,16 @@ from pyrogram import filters
 
 load_dotenv()
 
-API_ID = int(getenv("API_ID"))
-API_HASH = getenv("API_HASH")
+API_ID = int(getenv("API_ID","12227067"))
+API_HASH = getenv("API_HASH","b463bedd791aa733ae2297e6520302fe")
 
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = getenv("BOT_TOKEN","")
 
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID"))
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "Sophia ᴍᴜsɪᴄ")
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://ambot:ambot@ambot.onafiyb.mongodb.net/?retryWrites=true&w=majority")
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID","-1001840241140"))
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "Sophia Music")
 
-OWNER_ID = list(map(int, getenv("OWNER_ID", "1356469075").split()))
+OWNER_ID = list(map(int, getenv("OWNER_ID", "6204761408").split()))
 
 HEROKU_API_KEY = getenv("HEROKU_API_KEY", None)
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME", None)
@@ -25,17 +25,17 @@ UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/AbhiModszYT/AMMusic"
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 GIT_TOKEN = getenv("GIT_TOKEN", None)
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/AbhiModszYT_Return")
-SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/AM_YTSupport")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/AmBotYT")
+SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/AM_YTSUPPORT")
 
 SUPPORT_HEHE = SUPPORT_GROUP.split("me/")[1]
 
-DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", "999"))
+DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", "9999999999999999"))
 SONG_DOWNLOAD_DURATION = int(getenv("SONG_DOWNLOAD_DURATION_LIMIT", "180"))
 
 AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", "False")
 AUTO_LEAVE_ASSISTANT_TIME = int(
-    getenv("ASSISTANT_LEAVE_TIME", "5400")
+    getenv("ASSISTANT_LEAVE_TIME", "6400")
 )
 
 AUTO_DOWNLOADS_CLEAR = getenv("AUTO_DOWNLOADS_CLEAR", "True")
@@ -45,8 +45,8 @@ PRIVATE_BOT_MODE = getenv("PRIVATE_BOT_MODE", None)
 YOUTUBE_DOWNLOAD_EDIT_SLEEP = int(getenv("YOUTUBE_EDIT_SLEEP", "5"))
 TELEGRAM_DOWNLOAD_EDIT_SLEEP = int(getenv("TELEGRAM_EDIT_SLEEP", "3"))
 
-SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", None)
-SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", None)
+SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", "2a230af10e0a40638dc77c1febb47170")
+SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", "7f92897a59464ddbbf00f06cd6bda7fc")
 
 VIDEO_STREAM_LIMIT = int(getenv("VIDEO_STREAM_LIMIT", "5"))
 SERVER_PLAYLIST_LIMIT = int(getenv("SERVER_PLAYLIST_LIMIT", "50"))
@@ -54,8 +54,8 @@ PLAYLIST_FETCH_LIMIT = int(getenv("PLAYLIST_FETCH_LIMIT", "50"))
 
 CLEANMODE_DELETE_MINS = int(getenv("CLEANMODE_MINS", "12"))
 
-TG_AUDIO_FILESIZE_LIMIT = int(getenv("TG_AUDIO_FILESIZE_LIMIT", "104857600"))
-TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", "1073741824"))
+TG_AUDIO_FILESIZE_LIMIT = int(getenv("TG_AUDIO_FILESIZE_LIMIT", "5242880000"))
+TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", "5242880000"))
 # https://www.gbmb.org/mb-to-bytes
 
 STRING1 = getenv("STRING_SESSION", None)
@@ -76,11 +76,11 @@ clean = {}
 autoclean = []
 
 
-START_IMG_URL = getenv("START_IMG_URL", "https://telegra.ph/file/f20237d3a028a343d595a.jpg")
+START_IMG_URL = getenv("START_IMG_URL", "https://te.legra.ph/file/e7a8c2b902d3e2fefd4ff.jpg")
 
 PING_IMG_URL = getenv(
     "PING_IMG_URL",
-    "https://telegra.ph/file/f20237d3a028a343d595a.jpg",
+    "https://te.legra.ph/file/e7a8c2b902d3e2fefd4ff.jpg",
 )
 
 PLAYLIST_IMG_URL = "https://te.legra.ph/file/4ec5ae4381dffb039b4ef.jpg"
@@ -97,7 +97,7 @@ STREAM_IMG_URL = "https://te.legra.ph/file/bd995b032b6bd263e2cc9.jpg"
 
 SOUNCLOUD_IMG_URL = "https://te.legra.ph/file/bb0ff85f2dd44070ea519.jpg"
 
-YOUTUBE_IMG_URL = "https://te.legra.ph/file/6298d377ad3eb46711644.jpg"
+YOUTUBE_IMG_URL = "https://te.legra.ph/file/8d3944528638ff176d115.jpg","https://te.legra.ph/file/00294cbabc8bd4a9e75b0.mp4","https://graph.org/file/7ca0ae3fe2e327d3dcc86.jpg","https://te.legra.ph/file/e7629907cf40431ec6ccd.jpg","https://graph.org/file/a39f6f364c34e724ef367.jpg","https://graph.org/file/88fcdd5e044279c0d1747.jpg","https://graph.org/file/fcc2837e0f83cd4d08765.jpg","https://graph.org/file/1fcd0f7d5fdb7e700dca5.jpg","https://graph.org/file/39c27bf76bf8742a148c4.jpg","https://graph.org/file/2c5e6f38ca28687c8c3e8.jpg","https://graph.org/file/71682c8fb277c84031c0f.jpg","https://graph.org/file/c118207cef395ceb196ee.jpg","https://graph.org/file/1b765cd3d9fcc99614a32.jpg","https://graph.org/file/d935b6fbb2e3936b1850a.jpg","https://graph.org/file/e94c4566b9a7cf7d23a4b.jpg","https://graph.org/file/fd2196561ba6e8c4c46a9.jpg","https://graph.org/file/17cbf7cedbc44b85c7bda.jpg","https://graph.org/file/cd72a1c4c3b1d52070a90.jpg","https://graph.org/file/8663d4f19f5d9c30f8ff9.jpg","https://graph.org/file/255e5501d4f8b2e348d87.jpg","https://graph.org/file/cf28d171b08e0590749c7.jpg","https://graph.org/file/a1d7ccd85d58b076f8f88.jpg","https://graph.org/file/aa10da451e1e263105516.jpg","https://graph.org/file/cba9cd9f3fd1bcf841db2.jpg","https://graph.org/file/a06eaee8e9070840947bd.jpg","https://graph.org/file/83f5a1123580bd75f591e.jpg","https://graph.org/file/2f4f60ba8405368505ba2.jpg","https://graph.org/file/18da6db0b032a6c428471.jpg","https://graph.org/file/cd0f7fd0dc68ce8dbe2d4.jpg","https://graph.org/file/eabfa2836ec2e6fb41cd5.jpg","https://graph.org/file/59fb7cd9ea2d1331e75ef.jpg","https://graph.org/file/748e908aaa6cbb6c03402.jpg","https://graph.org/file/a26d09d472ddce5532ca2.jpg","https://graph.org/file/3fb4577387c3934eed027.jpg","https://graph.org/file/e19ab57b45fe4c9765869.jpg","https://graph.org/file/4b9b5d7b6e1a46c55dea1.jpg","https://graph.org/file/d7f9dd74e37f3e4985075.jpg","https://graph.org/file/8fd58648581a8f8d3f19b.jpg","https://te.legra.ph/file/7b10f2f5ffb1bc6075197.jpg","https://te.legra.ph/file/628180b161e5233889919.jpg","https://te.legra.ph/file/e8571aeadbd3204a28076.jpg","https://te.legra.ph/file/8d3944528638ff176d115.jpg","https://te.legra.ph/file/95c760593b889ac2cf283.jpg",
 
 SPOTIFY_ARTIST_IMG_URL = "https://te.legra.ph/file/37d163a2f75e0d3b403d6.jpg"
 
@@ -130,9 +130,9 @@ if UPSTREAM_REPO:
 if PING_IMG_URL:
     if PING_IMG_URL != "assets/Ping.jpeg":
         if not re.match("(?:http|https)://", PING_IMG_URL):
-            PING_IMG_URL = "https://telegra.ph/file/f20237d3a028a343d595a.jpg"
+            PING_IMG_URL = "https://telegra.ph/file/56d1760224589ee370186.jpg"
 
 if START_IMG_URL:
     if START_IMG_URL != "assets/Ping.jpeg":
         if not re.match("(?:http|https)://", START_IMG_URL):
-            START_IMG_URL = "https://telegra.ph/file/f20237d3a028a343d595a.jpg"
+            START_IMG_URL = "https://te.legra.ph/file/e7a8c2b902d3e2fefd4ff.jpg"
