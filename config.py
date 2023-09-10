@@ -10,13 +10,13 @@ load_dotenv()
 API_ID = int(getenv("API_ID","12227067"))
 API_HASH = getenv("API_HASH","b463bedd791aa733ae2297e6520302fe")
 
-BOT_TOKEN = getenv("BOT_TOKEN","")
+BOT_TOKEN = getenv("BOT_TOKEN","6695096262:AAEY_iryJXb2WdiyVE7cN86_9BkNVMKF4ds")
 
 MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://ambot:ambot@ambot.onafiyb.mongodb.net/?retryWrites=true&w=majority")
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID","-1001840241140"))
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "Sophia Music")
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID","-1001973171142"))
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "𝑴𝒊𝒔𝒔 𝒔𝒐𝒏𝒂")
 
-OWNER_ID = list(map(int, getenv("OWNER_ID", "6204761408").split()))
+OWNER_ID = list(map(int, getenv("OWNER_ID", "6634748952").split()))
 
 HEROKU_API_KEY = getenv("HEROKU_API_KEY", None)
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME", None)
@@ -58,7 +58,7 @@ TG_AUDIO_FILESIZE_LIMIT = int(getenv("TG_AUDIO_FILESIZE_LIMIT", "5242880000"))
 TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", "5242880000"))
 # https://www.gbmb.org/mb-to-bytes
 
-STRING1 = getenv("STRING_SESSION", None)
+STRING1 = getenv("STRING_SESSION", "BQCrwet9Lr-abhuEpZdg4hgFd7kQTMkbRNe2LR0wJBlc6iImz6Eb_AoHyhBybAjqHF4024Vjh1UiCk0I8BGxBPjDo46gRMwZPrJsAhsAOne2H8cm1vbJ21ot-ucZVHf3CEPSEK8kysyRLwGmb3u7zYmM0fvkHzIAx5rfWO-QfFHMsgD6J83RkWWuglyEioZ1RvaaCbbIUMEO1aay3hhCAUFO2BeYUsasBI3eu7YRkm1uhmpHxrqdOThdmlbj9T5dLIKvRZhqJ1UxG-bPevG_WZqe1Ye_cRkJ26aMifE3YoomKDJrzR7UOLmLVo6rOLSjbGZqvLkXhwCrtNF7MWaefIa0AAAAAX7UZY0A")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
@@ -76,11 +76,11 @@ clean = {}
 autoclean = []
 
 
-START_IMG_URL = getenv("START_IMG_URL", "https://te.legra.ph/file/e7a8c2b902d3e2fefd4ff.jpg")
+START_IMG_URL = getenv("START_IMG_URL", "https://graph.org/file/f5473b8c1556a2dbc71bb.jpg")
 
 PING_IMG_URL = getenv(
     "PING_IMG_URL",
-    "https://te.legra.ph/file/e7a8c2b902d3e2fefd4ff.jpg",
+    "https://graph.org/file/f5473b8c1556a2dbc71bb.jpg",
 )
 
 PLAYLIST_IMG_URL = "https://te.legra.ph/file/4ec5ae4381dffb039b4ef.jpg"
