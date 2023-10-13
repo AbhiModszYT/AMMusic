@@ -10,7 +10,7 @@ from PIL import Image, ImageChops, ImageDraw, ImageEnhance, ImageFilter, ImageFo
 from youtubesearchpython.__future__ import VideosSearch
 
 import config
-from AMMusic import app
+from AM import app
 
 
 def changeImageSize(maxWidth, maxHeight, image):
