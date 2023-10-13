@@ -76,31 +76,35 @@ clean = {}
 autoclean = []
 
 
-START_IMG_URL = getenv("START_IMG_URL", "https://graph.org/file/b27353ce6af4d8b7dd695.jpg")
+START_IMG_URL = getenv("START_IMG_URL", "https://graph.org/file/ea11748b5ecd674583a99.jpg")
 
-PING_IMG_URL = getenv("PING_IMG_URL", "https://graph.org/file/b27353ce6af4d8b7dd695.jpg")
+PING_IMG_URL = getenv(
+    "PING_IMG_URL",
+    "https://graph.org/file/ea11748b5ecd674583a99.jpg",
+)
 
-PLAYLIST_IMG_URL = getenv("PLAYLIST_IMG_URL","https://te.legra.ph/file/4ec5ae4381dffb039b4ef.jpg")
+PLAYLIST_IMG_URL = "https://graph.org/file/ea11748b5ecd674583a99.jpg"
 
-GLOBAL_IMG_URL = getenv("GLOBAL_IMG_URL","https://te.legra.ph/file/e906c2def5afe8a9b9120.jpg")
+GLOBAL_IMG_URL = "https://graph.org/file/ea11748b5ecd674583a99.jpg"
 
-STATS_IMG_URL = getenv("STATS_IMG_URL","https://te.legra.ph/file/e906c2def5afe8a9b9120.jpg")
+STATS_IMG_URL = "https://graph.org/file/ea11748b5ecd674583a99.jpg"
 
-TELEGRAM_AUDIO_URL = getenv("TELEGRAM_AUDIO_URL","https://te.legra.ph/file/6298d377ad3eb46711644.jpg")
+TELEGRAM_AUDIO_URL = "https://te.legra.ph/file/6298d377ad3eb46711644.jpg"
 
-TELEGRAM_VIDEO_URL = getenv("TELEGRAM_VIDEO_URL","https://te.legra.ph/file/6298d377ad3eb46711644.jpg")
+TELEGRAM_VIDEO_URL = "https://te.legra.ph/file/6298d377ad3eb46711644.jpg"
 
-STREAM_IMG_URL = getenv("STREAM_IMG_URL","https://te.legra.ph/file/bd995b032b6bd263e2cc9.jpg")
+STREAM_IMG_URL = "https://te.legra.ph/file/bd995b032b6bd263e2cc9.jpg"
 
-SOUNCLOUD_IMG_URL = getenv("SOUNCLOUD_IMG_URL","https://te.legra.ph/file/bb0ff85f2dd44070ea519.jpg")
+SOUNCLOUD_IMG_URL = "https://te.legra.ph/file/bb0ff85f2dd44070ea519.jpg"
 
-YOUTUBE_IMG_URL = getenv("YOUTUBE_IMG_URL","https://te.legra.ph/file/6298d377ad3eb46711644.jpg")
+YOUTUBE_IMG_URL = "https://te.legra.ph/file/6298d377ad3eb46711644.jpg"
 
-SPOTIFY_ARTIST_IMG_URL = getenv("SPOTIFY_ARTIST_IMG_URL","https://te.legra.ph/file/37d163a2f75e0d3b403d6.jpg")
+SPOTIFY_ARTIST_IMG_URL = "https://te.legra.ph/file/37d163a2f75e0d3b403d6.jpg"
 
-SPOTIFY_ALBUM_IMG_URL = getenv("SPOTIFY_ALBUM_IMG_URL","https://te.legra.ph/file/b35fd1dfca73b950b1b05.jpg")
+SPOTIFY_ALBUM_IMG_URL = "https://te.legra.ph/file/b35fd1dfca73b950b1b05.jpg"
 
-SPOTIFY_PLAYLIST_IMG_URL = getenv("SPOTIFY_PLAYLIST_IMG_URL","https://te.legra.ph/file/95b3ca7993bbfaf993dcb.jpg")
+SPOTIFY_PLAYLIST_IMG_URL = "https://te.legra.ph/file/95b3ca7993bbfaf993dcb.jpg"
+
 
 def time_to_seconds(time):
     stringt = str(time)
@@ -115,107 +119,20 @@ SONG_DOWNLOAD_DURATION_LIMIT = int(
     time_to_seconds(f"{SONG_DOWNLOAD_DURATION}:00")
 )
 
-if SUPPORT_CHANNEL:
-    if not re.match("(?:http|https)://", SUPPORT_CHANNEL):
-        print(
-            "[ERROR] - Your SUPPORT_CHANNEL url is wrong. Please ensure that it starts with https://"
-        )
-        
-
-if SUPPORT_GROUP:
-    if not re.match("(?:http|https)://", SUPPORT_GROUP):
-        print(
-            "[ERROR] - Your SUPPORT_GROUP url is wrong. Please ensure that it starts with https://"
-        )
-        
 
 if UPSTREAM_REPO:
     if not re.match("(?:http|https)://", UPSTREAM_REPO):
         print(
             "[ERROR] - Your UPSTREAM_REPO url is wrong. Please ensure that it starts with https://"
         )
-        
-
-if GITHUB_REPO:
-    if not re.match("(?:http|https)://", GITHUB_REPO):
-        print(
-            "[ERROR] - Your GITHUB_REPO url is wrong. Please ensure that it starts with https://"
-        )
-        
-
+        sys.exit()
 
 if PING_IMG_URL:
     if PING_IMG_URL != "assets/Ping.jpeg":
         if not re.match("(?:http|https)://", PING_IMG_URL):
-            print(
-                "[ERROR] - Your PING_IMG_URL url is wrong. Please ensure that it starts with https://"
-            )
-            
+            PING_IMG_URL = "https://telegra.ph/file/56d1760224589ee370186.jpg"
 
-if PLAYLIST_IMG_URL:
-    if PLAYLIST_IMG_URL != "assets/Playlist.jpeg":
-        if not re.match("(?:http|https)://", PLAYLIST_IMG_URL):
-            print(
-                "[ERROR] - Your PLAYLIST_IMG_URL url is wrong. Please ensure that it starts with https://"
-            )
-            
-
-if GLOBAL_IMG_URL:
-    if GLOBAL_IMG_URL != "assets/Global.jpeg":
-        if not re.match("(?:http|https)://", GLOBAL_IMG_URL):
-            print(
-                "[ERROR] - Your GLOBAL_IMG_URL url is wrong. Please ensure that it starts with https://"
-            )
-            
-
-
-if STATS_IMG_URL:
-    if STATS_IMG_URL != "assets/Stats.jpeg":
-        if not re.match("(?:http|https)://", STATS_IMG_URL):
-            print(
-                "[ERROR] - Your STATS_IMG_URL url is wrong. Please ensure that it starts with https://"
-            )
-            
-
-
-if TELEGRAM_AUDIO_URL:
-    if TELEGRAM_AUDIO_URL != "assets/Audio.jpeg":
-        if not re.match("(?:http|https)://", TELEGRAM_AUDIO_URL):
-            print(
-                "[ERROR] - Your TELEGRAM_AUDIO_URL url is wrong. Please ensure that it starts with https://"
-            )
-            
-
-
-if STREAM_IMG_URL:
-    if STREAM_IMG_URL != "assets/Stream.jpeg":
-        if not re.match("(?:http|https)://", STREAM_IMG_URL):
-            print(
-                "[ERROR] - Your STREAM_IMG_URL url is wrong. Please ensure that it starts with https://"
-            )
-            
-
-
-if SOUNCLOUD_IMG_URL:
-    if SOUNCLOUD_IMG_URL != "assets/Soundcloud.jpeg":
-        if not re.match("(?:http|https)://", SOUNCLOUD_IMG_URL):
-            print(
-                "[ERROR] - Your SOUNCLOUD_IMG_URL url is wrong. Please ensure that it starts with https://"
-            )
-            
-
-if YOUTUBE_IMG_URL:
-    if YOUTUBE_IMG_URL != "assets/Youtube.jpeg":
-        if not re.match("(?:http|https)://", YOUTUBE_IMG_URL):
-            print(
-                "[ERROR] - Your YOUTUBE_IMG_URL url is wrong. Please ensure that it starts with https://"
-            )
-            
-
-
-if TELEGRAM_VIDEO_URL:
-    if TELEGRAM_VIDEO_URL != "assets/Video.jpeg":
-        if not re.match("(?:http|https)://", TELEGRAM_VIDEO_URL):
-            print(
-                "[ERROR] - Your TELEGRAM_VIDEO_URL url is wrong. Please ensure that it starts with https://"
-            )
+if START_IMG_URL:
+    if START_IMG_URL != "assets/Ping.jpeg":
+        if not re.match("(?:http|https)://", START_IMG_URL):
+            START_IMG_URL = "https://te.legra.ph/file/56d1760224589ee370186.jpg"
