@@ -1,17 +1,18 @@
 import os
+import random
 import re
 import textwrap
-
 import aiofiles
 import aiohttp
 import numpy as np
-
 from PIL import Image, ImageChops, ImageDraw, ImageEnhance, ImageFilter, ImageFont
 from youtubesearchpython.__future__ import VideosSearch
-
 from config import YOUTUBE_IMG_URL
 from AM import app
 
+background_images = ["am.PNG", "am1.PNG", "am2.PNG", "am3.PNG","am4.PNG","am5.PNG","am6.PNG","am7.PNG"]
+
+random_bg_image = random.choice(background_images)
 
 def changeImageSize(maxWidth, maxHeight, image):
     widthRatio = maxWidth / image.size[0]
@@ -82,7 +83,7 @@ async def gen_thumb(videoid, user_id):
         x = f.resize((107, 107))
 
         youtube = Image.open(f"cache/thumb{videoid}.png")
-        bg = Image.open(f"AM/assets/am.png")
+        bg = Image.open(f"AM/am/{random_bg_image}")
         image1 = changeImageSize(1280, 720, youtube)
         image2 = image1.convert("RGBA")
         background = image2.filter(filter=ImageFilter.BoxBlur(30))
@@ -169,6 +170,7 @@ async def gen_thumb(videoid, user_id):
     except Exception as e:
         print(e)
         return YOUTUBE_IMG_URL
+
 
 
 async def gen_qthumb(videoid, user_id):
