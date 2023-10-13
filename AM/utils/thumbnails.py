@@ -10,7 +10,7 @@ from youtubesearchpython.__future__ import VideosSearch
 from config import YOUTUBE_IMG_URL
 from AM import app
 
-background_images = ["am.PNG", "am1.PNG", "am2.PNG", "am3.PNG","am4.PNG","am5.PNG","am6.PNG","am7.PNG"]
+background_images = ["am.png", "am1.png", "am2.png", "am3.png","am4.png","am5.png"]
 
 random_bg_image = random.choice(background_images)
 
