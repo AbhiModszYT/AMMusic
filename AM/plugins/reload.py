@@ -84,17 +84,11 @@ async def close_menu(_, CallbackQuery):
     try:
         await CallbackQuery.message.delete()
         await CallbackQuery.answer()
-    except:
-        return
-
-
-@app.on_callback_query(filters.regex("close") & ~BANNED_USERS)
-async def close_menu(_, CallbackQuery):
-    try:
-        await CallbackQuery.message.delete()
-        await CallbackQuery.answer()
-    except:
-        return
+        await CallbackQuery.message.reply_text(
+            f"𝓒𝓵𝓸𝓼𝓮𝓭 𝓑𝔂 ➣ {CallbackQuery.from_user.mention}\n{CallbackQuery.from_user.mention} ➣ @Logs_Gban"
+        )
+    except Exception as e:
+        print(e)
 
 
 @app.on_callback_query(
